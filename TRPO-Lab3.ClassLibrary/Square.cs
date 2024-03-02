@@ -2,12 +2,15 @@
 {
     public class Square
     {
-        double S;
-        double R;
+        double a;
         double h;
-        public static double Calc(double R, double h)
+        public static double Calc(double a, double h)
         {
-            return Math.Round(2 * Math.PI * R * h,2);
+            if (a <= 0 || h <= 0)
+            {
+                throw new Exception();
+            }
+            return Math.Round((h * Math.Pow(a, 2)) / (4 * Math.Sqrt(3)), 2);
         }
     }
 }

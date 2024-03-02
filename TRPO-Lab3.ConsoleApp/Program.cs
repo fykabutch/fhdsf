@@ -3,12 +3,12 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Введите радиус большого круга шара: ");
-        double R = double.Parse(Console.ReadLine());
-        Console.WriteLine("Введите высоту шарового сегмента: ");
+        Console.WriteLine("Введите сторону правильного треугольника: ");
+        double a = double.Parse(Console.ReadLine());
+        Console.WriteLine("Введите высоту правильной треугольной пирамиды: ");
         double h = double.Parse(Console.ReadLine());
-        double s = Square.Calc(R,h);
-        Console.WriteLine($"Площадь поверхности шарового сектора: {s}");
+        double s = Square.Calc(a,h);
+        Console.WriteLine($"Объем правильной треугольной пирамиды: {s}");
     }
 
 }
