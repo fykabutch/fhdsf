@@ -20,4 +20,4 @@ publish_win:
   artifacts:
     name: $projectName.win-x64
     paths: 
-        - $publishDir/$projectName.win-x64
+        - $publishDir/../$projectName.win-x64
