@@ -9,6 +9,7 @@ class Program
         double h = double.Parse(Console.ReadLine());
         double s = Square.Calc(a,h);
         Console.WriteLine($"Объем правильной треугольной пирамиды: {s}");
+        Console.ReadKey();
     }
 
 }
