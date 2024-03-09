@@ -11,7 +11,7 @@ stages:
 test_job:
   stage: test
   script:
-    - dotnet test TRPO-Lab3.Tests
+    - dotnet test TRPO-Lab3.TestProject
 
 publish_win:
   stage: publish
