@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>TRPO_Lab4.WpfApp</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="formula.png" />
+    <None Remove="pyramid_right_tri_volume.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TRPO-Lab3.ClassLibrary\TRPO-Lab3.ClassLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="formula.png" />
+    <Resource Include="pyramid_right_tri_volume.png" />
+  </ItemGroup>
+
+</Project>

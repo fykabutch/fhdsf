@@ -6,7 +6,7 @@
         double h;
         public static double Calc(double a, double h)
         {
-            if (a <= 0 || h <= 0)
+            if (a < 0 || h < 0)
             {
                 throw new Exception();
             }

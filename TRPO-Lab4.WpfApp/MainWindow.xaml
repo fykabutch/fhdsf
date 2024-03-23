@@ -1,0 +1,25 @@
+﻿<Window x:Class="TRPO_Lab4.WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TRPO_Lab4.WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}">
+    <Grid>
+        <StackPanel x:Name="StackPanelMain">
+            <Label Content="Сторона:" Width="120" Height="30" />
+            <TextBox TextWrapping="Wrap" Width="120" Height="20" Text="{Binding side, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Content="Высота:" Width="120" Height="30" />
+            <TextBox TextWrapping="Wrap" Width="120" Height="20" Text="{Binding height, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Content="Объём:" Width="120" Height="30" />
+            <TextBox x:Name="TextBoxResult" TextWrapping="Wrap" Width="120" Height="20"
+        Text="{Binding Volume, UpdateSourceTrigger=PropertyChanged}" />
+            <StackPanel Orientation="Horizontal" Width="300" Height="199">
+                <Image Height="145" Width="144" Source="/pyramid_right_tri_volume.png" Stretch="UniformToFill" />
+                <Image Height="100" Width="154" Source="/formula.png" Stretch="UniformToFill" VerticalAlignment="Center" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
